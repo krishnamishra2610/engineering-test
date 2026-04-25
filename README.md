@@ -109,6 +109,17 @@ We view AI tools as productivity aids, but we're ultimately assessing your engin
 
 If you have any questions about the exercises or the submission process, please reach out to your recruitment contact.
 
+## Steps to verify the changes
+
+To verify the application's behavior after recent updates, you can print the state of the items to the console. Paste the following snippet both before and after the `UpdateQuality()` method call:
+```C#
+        foreach (var item in app.Items)
+        {
+            System.Console.WriteLine($"Name : {item.Name} | Quality : {item.Quality} | SellIn : {item.SellIn}");
+        }
+```
+
+
 ---
 
 ## Credits & Attribution
